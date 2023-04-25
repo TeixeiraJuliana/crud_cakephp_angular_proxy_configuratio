@@ -1,0 +1,20 @@
+<div  >
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Funciario</th>
+        <th scope="col">Inicio do turno</th>
+        <th scope="col">Fim do turno</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let turno of turnos">
+        <th scope="row" >{{turno.id}}</th>
+        <td>{{turno.shift_name}}</td>
+        <td>{{turno.end_work_shift}}</td>
+        <td>{{turno.start_work_shift}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

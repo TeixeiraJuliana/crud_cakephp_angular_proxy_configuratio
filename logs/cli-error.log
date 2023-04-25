@@ -1,0 +1,126 @@
+2023-03-25 07:54:54 Error: [Cake\Core\Exception\MissingPluginException] Plugin turnus could not be found. in C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 207
+Exception Attributes: array (
+  'plugin' => 'turnus',
+)
+Stack Trace:
+#0 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\Plugin.php(240): Cake\Core\PluginCollection->get('turnus')
+#1 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Util\UtilTrait.php(77): Cake\Core\Plugin::path('turnus')
+#2 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\ConfigurationTrait.php(64): Migrations\Command\Migrate->getOperationsPath(Object(Symfony\Component\Console\Input\ArgvInput))
+#3 C:\wamp64\www\cakephpinitial\vendor\robmorgan\phinx\src\Phinx\Console\Command\AbstractCommand.php(101): Migrations\Command\Migrate->getConfig()
+#4 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Command\CommandTrait.php(64): Phinx\Console\Command\AbstractCommand->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\wamp64\www\cakephpinitial\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(63): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Command\Migrate.php(66): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\wamp64\www\cakephpinitial\vendor\symfony\console\Command\Command.php(298): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\wamp64\www\cakephpinitial\vendor\symfony\console\Application.php(1040): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp64\www\cakephpinitial\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp64\www\cakephpinitial\vendor\symfony\console\Application.php(171): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\Shell.php(531): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\wamp64\www\cakephpinitial\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(169): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\wamp64\www\cakephpinitial\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2023-03-25 11:07:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'busines.user' doesn't exist in C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'user', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('user', Array)
+#2 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('user')
+#3 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#4 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'user', 'User')
+#7 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('User')
+#8 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('User')
+#9 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('User', 0)
+#10 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('user')
+#12 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\wamp64\www\cakephpinitial\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'busines.user' doesn't exist in C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 37
+Stack Trace:
+#0 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(37): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(358): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(361): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(310): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#7 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#8 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#9 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#10 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'user', Array, Object(Cake\Database\Schema\TableSchema))
+#11 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('user', Array)
+#12 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('user')
+#13 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#14 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#15 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#16 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'user', 'User')
+#17 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('User')
+#18 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('User')
+#19 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('User', 0)
+#20 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#21 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('user')
+#22 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#23 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#24 C:\wamp64\www\cakephpinitial\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#25 {main}
+
+
+2023-03-25 11:07:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'busines.users' doesn't exist in C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('users', Array)
+#2 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('users')
+#3 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#4 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#7 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#8 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Users')
+#9 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#10 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('users')
+#12 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\wamp64\www\cakephpinitial\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'busines.users' doesn't exist in C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 37
+Stack Trace:
+#0 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(37): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(358): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(361): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(310): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#7 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#8 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#9 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#10 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#11 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('users', Array)
+#12 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('users')
+#13 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#14 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#15 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#16 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#17 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#18 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Users')
+#19 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#20 C:\wamp64\www\cakephpinitial\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#21 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('users')
+#22 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#23 C:\wamp64\www\cakephpinitial\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#24 C:\wamp64\www\cakephpinitial\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#25 {main}
+
+

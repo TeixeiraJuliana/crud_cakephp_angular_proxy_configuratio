@@ -1,0 +1,275 @@
+2023-03-25 07:53:30 Debug: duration=1 rows=1 SHOW TABLES FROM `busines`
+2023-03-25 07:55:21 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "busines"
+2023-03-25 07:55:21 Debug: duration=1 rows=3 SHOW TABLES FROM `busines`
+2023-03-25 07:55:21 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `turnos`
+2023-03-25 07:55:21 Debug: duration=3 rows=1 SHOW INDEXES FROM `turnos`
+2023-03-25 07:55:21 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnos' AND rc.TABLE_NAME = 'turnos'
+2023-03-25 07:55:21 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'turnos'
+2023-03-25 11:07:03 Debug: duration=29 rows=3 SHOW TABLES FROM `busines`
+2023-03-25 11:07:33 Debug: duration=5 rows=3 SHOW TABLES FROM `busines`
+2023-03-25 11:07:33 Debug: duration=7 rows=0 SHOW FULL COLUMNS FROM `user`
+2023-03-25 11:07:50 Debug: duration=2 rows=3 SHOW TABLES FROM `busines`
+2023-03-25 11:07:50 Debug: duration=9 rows=0 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:08:18 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "busines"
+2023-03-25 11:08:18 Debug: duration=0 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "busines"
+2023-03-25 11:08:18 Debug: duration=1 rows=5 SHOW TABLES FROM `busines`
+2023-03-25 11:08:18 Debug: duration=5 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:08:18 Debug: duration=3 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:08:18 Debug: duration=6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:08:18 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:08:18 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `turnos`
+2023-03-25 11:08:18 Debug: duration=1 rows=1 SHOW INDEXES FROM `turnos`
+2023-03-25 11:08:18 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnos' AND rc.TABLE_NAME = 'turnos'
+2023-03-25 11:08:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'turnos'
+2023-03-25 11:08:18 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:08:18 Debug: duration=2 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:08:18 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:08:18 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:09:00 Debug: duration=3 rows=5 SHOW TABLES FROM `busines`
+2023-03-25 11:09:15 Debug: duration=1 rows=5 SHOW TABLES FROM `busines`
+2023-03-25 11:09:15 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:09:15 Debug: duration=8 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:09:15 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW INDEXES FROM `phinxlog`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+2023-03-25 11:09:15 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2023-03-25 11:09:15 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `turnos`
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW INDEXES FROM `turnos`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnos' AND rc.TABLE_NAME = 'turnos'
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'turnos'
+2023-03-25 11:09:15 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `turnus_phinxlog`
+2023-03-25 11:09:15 Debug: duration=2 rows=1 SHOW INDEXES FROM `turnus_phinxlog`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnus_phinxlog' AND rc.TABLE_NAME = 'turnus_phinxlog'
+2023-03-25 11:09:15 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'turnus_phinxlog'
+2023-03-25 11:09:15 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:09:15 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:09:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:09:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:09:29 Debug: duration=14 rows=5 SHOW TABLES FROM `busines`
+2023-03-25 11:09:29 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:09:29 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `phinxlog`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2023-03-25 11:09:29 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:09:29 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `turnos`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `turnos`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnos' AND rc.TABLE_NAME = 'turnos'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'turnos'
+2023-03-25 11:09:29 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `turnus_phinxlog`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `turnus_phinxlog`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'turnus_phinxlog' AND rc.TABLE_NAME = 'turnus_phinxlog'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'turnus_phinxlog'
+2023-03-25 11:09:29 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:09:29 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:09:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:09:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:15:33 Debug: duration=6 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:15:33 Debug: duration=3 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:15:33 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:15:33 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:15:33 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:15:33 Debug: duration=1 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:15:33 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:15:33 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:15:33 Debug: duration=4 rows=0 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:15:33 Debug: duration=3 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:16:33 Debug: duration=2 rows=0 SELECT Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM roles Roles LIMIT 20 OFFSET 0
+2023-03-25 11:16:33 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM roles Roles
+2023-03-25 11:16:37 Debug: duration=1 rows=0 SELECT Roles.id AS `Roles__id` FROM roles Roles LIMIT 200
+2023-03-25 11:16:49 Debug: duration=1 rows=0 SELECT Roles.id AS `Roles__id` FROM roles Roles LIMIT 200
+2023-03-25 11:19:42 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:19:42 Debug: duration=1 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:19:42 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:19:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:19:42 Debug: duration=1 rows=0 SELECT Roles.id AS `Roles__id` FROM roles Roles LIMIT 200
+2023-03-25 11:20:38 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `users`
+2023-03-25 11:20:38 Debug: duration=1 rows=1 SHOW INDEXES FROM `users`
+2023-03-25 11:20:38 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2023-03-25 11:20:38 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2023-03-25 11:20:38 Debug: duration=1 rows=0 SELECT Roles.id AS `Roles__id` FROM roles Roles LIMIT 200
+2023-03-25 11:20:56 Debug: duration=1 rows=0 SELECT Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM roles Roles LIMIT 20 OFFSET 0
+2023-03-25 11:20:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM roles Roles
+2023-03-25 11:21:06 Debug: duration=0 rows=0 BEGIN
+2023-03-25 11:21:06 Debug: duration=2 rows=1 INSERT INTO roles (role, created, modified) VALUES ('admin', '2023-03-25 11:21:06', '2023-03-25 11:21:06')
+2023-03-25 11:21:06 Debug: duration=0 rows=0 COMMIT
+2023-03-25 11:21:06 Debug: duration=1 rows=1 SELECT Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM roles Roles LIMIT 20 OFFSET 0
+2023-03-25 11:21:06 Debug: duration=7 rows=1 SELECT (COUNT(*)) AS `count` FROM roles Roles
+2023-03-25 11:21:13 Debug: duration=1 rows=1 SELECT Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM roles Roles LIMIT 20 OFFSET 0
+2023-03-25 11:21:13 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM roles Roles
+2023-03-25 11:21:20 Debug: duration=0 rows=1 SELECT Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM roles Roles LIMIT 20 OFFSET 0
+2023-03-25 11:21:20 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM roles Roles
+2023-03-25 11:21:23 Debug: duration=2 rows=0 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:21:23 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:21:25 Debug: duration=0 rows=1 SELECT Roles.id AS `Roles__id` FROM roles Roles LIMIT 200
+2023-03-25 11:21:49 Debug: duration=0 rows=0 BEGIN
+2023-03-25 11:21:49 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'Juliana Teixeira' LIMIT 1
+2023-03-25 11:21:49 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.email = 'teixeirajulianakellys@gmail.com' LIMIT 1
+2023-03-25 11:21:49 Debug: duration=5 rows=4 SHOW FULL COLUMNS FROM `roles`
+2023-03-25 11:21:49 Debug: duration=2 rows=1 SHOW INDEXES FROM `roles`
+2023-03-25 11:21:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'busines' AND kcu.TABLE_NAME = 'roles' AND rc.TABLE_NAME = 'roles'
+2023-03-25 11:21:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'roles'
+2023-03-25 11:21:49 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM roles Roles WHERE Roles.id = 1 LIMIT 1
+2023-03-25 11:21:49 Debug: duration=1 rows=1 INSERT INTO users (name, username, email, password, roles_id, created, modified) VALUES ('JULIANA KELLYS MARIA DA SILVA TEIXEIRA', 'Juliana Teixeira', 'teixeirajulianakellys@gmail.com', 'jkms2805570', 1, '2023-03-25 11:21:49', '2023-03-25 11:21:49')
+2023-03-25 11:21:49 Debug: duration=0 rows=0 COMMIT
+2023-03-25 11:21:49 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:21:49 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:21:57 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:21:57 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:22:12 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:22:12 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:22:22 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:22:22 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
+2023-03-25 11:22:23 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.username AS `Users__username`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.roles_id AS `Users__roles_id`, Users.created AS `Users__created`, Users.modified AS `Users__modified`, Roles.id AS `Roles__id`, Roles.role AS `Roles__role`, Roles.created AS `Roles__created`, Roles.modified AS `Roles__modified` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id) LIMIT 20 OFFSET 0
+2023-03-25 11:22:23 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users INNER JOIN roles Roles ON Roles.id = (Users.roles_id)
